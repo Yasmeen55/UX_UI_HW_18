@@ -1,6 +1,7 @@
 .inline-block {
     display: inline-block; 
     vertical-align: top;
+    margin-left: 1em;   
 }
 
 .logo {
@@ -9,6 +10,10 @@ padding: 1%;
 text-align: center;
 }
 
+.maincontent{
+    width: 1300px;
+    margin: auto;
+}
 nav {
     width: 73%;
     padding: 1%;
@@ -20,11 +25,30 @@ ul {
 }
 
 .heroimg{
-    height:1000px;
-    width:500px;
-    padding:25px;
+    height: 800px;
+    width:400px;
+    padding:0px;
     margin:0 auto;
     }
+
+ .flexcontainer{ 
+ columns: 3;
+ justify-content: space-evenly;
+ display: flex;
+ padding: 3%
+ }
+ 
+
+ h1 {
+    text-align: center;
+    padding: 7px;
+    text-decoration:underline;
+ }
+
+ .row            { 
+    -webkit-flex-direction: row; 
+    flex-direction: row;
+  }
 
 footer {
     background-color: #373738;
@@ -37,4 +61,6 @@ footer ul{
 
 footer ul li {
     text-align: center;
+    color: white; 
+   width: 7em; 
 }
