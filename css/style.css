@@ -31,6 +31,40 @@ ul {
     margin:0 auto;
     }
 
+.workGrid{
+    display: flexbox;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "DHScard umamicard";
+    text-align: center;
+    padding: 0%;
+}
+
+
+    .dhs{
+        width: 500px;
+        height:auto;
+        padding: 8%;
+        }
+    
+
+    .umami{
+        width: 300px;
+        height: auto;
+        padding: 11%;
+    }
+
+    .button{
+        background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+    }
+
+
  .flexcontainer{ 
  columns: 3;
  justify-content: space-evenly;
@@ -39,7 +73,7 @@ ul {
  }
  
 
- h1 {
+ h2 {
     text-align: center;
     padding: 7px;
     text-decoration:underline;
@@ -63,4 +97,18 @@ footer ul li {
     text-align: center;
     color: white; 
    width: 7em; 
+}
+@media only screen and (max-width: 600px) {
+    .flexcontainer{ 
+        flex-direction: column;
+        }
+
+        .box {
+            width: 100%;
+     }
+
+        .workGrid{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: "DHScard" "umamicard";
 }
