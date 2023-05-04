@@ -11,13 +11,14 @@ text-align: center;
 }
 
 .maincontent{
-    width: 1300px;
+    max-width: 1300px;
     margin: auto;
 }
 nav {
     width: 73%;
     padding: 1%;
 }
+ 
 
 ul {
     width: 50%;
@@ -32,50 +33,68 @@ ul {
     }
 
 .workGrid{
-    display: flexbox;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: "DHScard umamicard";
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+     "DHScard" "umamicard";
     text-align: center;
-    padding: 0%;
+    padding:0%;
 }
 
 
     .dhs{
         width: 500px;
         height:auto;
-        padding: 8%;
+        padding: 0%;
         }
     
 
     .umami{
         width: 300px;
         height: auto;
-        padding: 11%;
+        padding: 0%;
+    }
+
+
+    p{
+        padding: 0%;
     }
 
     .button{
         background-color: #4CAF50; /* Green */
   border: none;
   color: white;
-  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
     }
 
+    .myWork{
+        margin:auto;
+    }
 
  .flexcontainer{ 
  columns: 3;
  justify-content: space-evenly;
  display: flex;
- padding: 3%
+ padding: 3%;
+ flex-direction: row;
  }
  
+ .umamicard{
+    grid-area: umamicard;
+ }
+
+ .DHScard{
+    grid-area: DHScard;
+    margin-bottom: 20px;
+ }
 
  h2 {
     text-align: center;
-    padding: 7px;
+    padding: 0px;
     text-decoration:underline;
  }
 
@@ -105,10 +124,17 @@ footer ul li {
 
         .box {
             width: 100%;
+            justify-content: center;
      }
 
-        .workGrid{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-areas: "DHScard" "umamicard";
+     .heroimg{
+        width: 100%;
+        justify-content: center;
+     }
+     .maincontent{
+        width: 100%;
+        margin: auto;
+    }
+
+      
 }
